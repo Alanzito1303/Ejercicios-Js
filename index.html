@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>JAVASCRIPT'S HOMEWORK</title>
+</head>
+<body>
+    
+    <main>
+        <h1>JAVASCRIPT'S HOMEWORK</h1>
+    </main>
+
+    <div class="pregunta1">
+        <div class="div1">
+        <h2>PREGUNTA 01</h2>
+        <p>ESCRIBE UN PROGRAMA QUE PIDA 2 NÚMEROS Y ESCRIBA EN LA PANTALLA CUAL ES MAYOR.</p>
+        </div>
+
+        <div class="ejercicio1">
+           <form>
+                <label id="label" for="input">Ingresa el primer número:</label>
+                <input id="input" type="number">
+
+                <label id="label1" for="input1">Ingresa el segundo número:</label>
+                <input id="input1" type="number">
+
+                <button id="button" type="button" onclick="mayormenor()">Ejecutar</button>
+           </form>
+        </div>
+
+        <img src="https://i.pinimg.com/originals/97/c7/f8/97c7f8a84f81d1526dd95e64c0ebeafb.png" alt="">
+    </div>
+        
+
+
+    <div class="pregunta2">
+        <div class="div1">
+        <h2>PREGUNTA 02</h2>
+        <p>ESCRIBE UN PROGRAMA QUE PIDA SOLO UN NUMERO Y DIGA SI ES DIVISIBLE ENTRE 2.</p>
+        </div>
+
+        <div class="ejercicio2">
+            <form>
+                <label id="label2" for="input">Ingresa un número:</label>
+                <input id="input2" type="number">
+
+                <button id="button2" type="button" onclick="divisible()">Ejecutar</button>
+           </form>
+        </div>
+
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/333eb203-1269-4a75-923b-bc8266d2a767/d6brify-653d15c9-be8f-4af0-b55c-d1766b374e62.png/v1/fill/w_730,h_1095/gohan_ssj2__png_by_lumus115_d6brify-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA5NSIsInBhdGgiOiJcL2ZcLzMzM2ViMjAzLTEyNjktNGE3NS05MjNiLWJjODI2NmQyYTc2N1wvZDZicmlmeS02NTNkMTVjOS1iZThmLTRhZjAtYjU1Yy1kMTc2NmIzNzRlNjIucG5nIiwid2lkdGgiOiI8PTczMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.lnYPLW-7ewijxdZpRFri8ZEBNoin73LrGvBaCVOjKUo" alt="">
+    </div>
+
+    <div></div>
+
+    <div class="footer"></div>
+
+    <script>
+        function mayormenor() {
+
+            var num1 = document.getElementById('input').value;
+            var num2 = document.getElementById('input1').value;
+
+            if(num1 > num2) {
+                alert("El número "+ num1 + " es mayor que el número " + num2)
+            }
+            else {
+                alert("El número "+ num2 + " es mayor que el número " + num1)
+            }
+
+        }
+
+        function divisible() {
+            var numero1 = document.getElementById('input2').value;
+        
+            if(numero1 % 2 == 0) {
+                alert("El número "+ numero1 + " es divisible entre 2")
+            }
+            else {
+                alert("El número "+ numero1 +" no es divisible entre 2")
+            }
+        }
+    </script>
+</body>
+</html>
