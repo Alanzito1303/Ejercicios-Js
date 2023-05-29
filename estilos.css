@@ -64,13 +64,13 @@ main h1:hover {
     left: 1vw;
 }
 
-.pregunta1 .ejercicio1 #input {
+.pregunta1 .ejercicio1 #num1 {
     width: 12%;
     position: absolute;
     right: 1vw;
 }
 
-.pregunta1 .ejercicio1 #input1 {
+.pregunta1 .ejercicio1 #num2 {
     width: 12%;
     position: absolute;
     top: 10vh;

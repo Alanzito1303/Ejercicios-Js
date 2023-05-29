@@ -21,11 +21,11 @@
 
         <div class="ejercicio1">
            <form>
-                <label id="label" for="input">Ingresa el primer número:</label>
-                <input id="input" type="number">
+                <label id="label" for="num1">Ingresa el primer número:</label>
+                <input id="num1" name="num1" type="number">
 
-                <label id="label1" for="input1">Ingresa el segundo número:</label>
-                <input id="input1" type="number">
+                <label id="label1" for="num2">Ingresa el segundo número:</label>
+                <input id="num2" name="num2" type="number">
 
                 <button id="button" type="button" onclick="mayormenor()">Ejecutar</button>
            </form>
@@ -60,17 +60,20 @@
 
     <script>
         function mayormenor() {
-
-            var num1 = document.getElementById('input').value;
-            var num2 = document.getElementById('input1').value;
+            num_mayor = 0;
+            num_menor = 0;
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
 
             if(num1 > num2) {
-                alert("El número "+ num1 + " es mayor que el número " + num2)
+                num_mayor = num1;
+                num_menor = num2;
             }
             else {
-                alert("El número "+ num2 + " es mayor que el número " + num1)
+                num_mayor = num2;
+                num_menor = num1;
             }
-
+            alert("El número "+ num_mayor + " es mayor que el número "+ num_menor)
         }
 
         function divisible() {
